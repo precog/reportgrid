@@ -1,0 +1,21 @@
+-cp src
+-cp ../lib/src
+-cp ../../../extern/caffeine-hx/ext3/
+-lib thx
+-lib dhx
+-lib hxevents
+-cp ../../../erazor/src/
+-cp ../../../extern/hscript/
+-lib hscript
+-js bin/js/reportgrid-charts.js
+-main rg.app.charts.JSBridge
+-D js_shims
+#-D haxe3
+-D embed_js
+#--dead-code-elimination
+-dce no
+--macro keep(["StringBuf","Math","thx.svg.Symbol","Dates","thx.svg.PathTypes","thx.svg.AreaTypes","thx.svg.CentroidTypes","rg.layout.Layout"])
+#--connect 8888
+#--js-modern
+--times
+-debug

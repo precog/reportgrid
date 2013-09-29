@@ -1,0 +1,35 @@
+body, html
+{
+	margin: 0;
+	padding: 0;
+}
+
+.chart
+{
+	width : 480px;
+	height : 320px;
+	margin: 0 auto;
+}
+
+iframe
+{
+	border: 0;
+}
+
+div.wide
+{
+	width : 640px;
+	height : 320px;
+}
+
+div.square
+{
+	width : 320px;
+	height : 320px;
+}
+
+div.big
+{
+	width : 780px;
+	height : 500px;
+}

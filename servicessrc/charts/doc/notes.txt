@@ -1,0 +1,24 @@
++++ SERVICES +++
+
+
++/up/form/
+
+/up.{html|json}
+	POST
+		index.html
+		config.ini (optional?)
+
+
+/down/{code}.{ext}{?params}
+	ext: JPG, PNG, PDF
+
+/info/{id}
+/up/gist/{id}/{$rev}
+
++++ OPTIONS +++
+
+config.ini
+	allowed parameters
+	default parameters
+	rendering options
+		--page-format

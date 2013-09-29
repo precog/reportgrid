@@ -1,0 +1,5 @@
+-cp src
+-cp ../../../../extern/caffeine-hx/ext3/
+-php ../../services/authcharts/
+-lib thx
+-main Main

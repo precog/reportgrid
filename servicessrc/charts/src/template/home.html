@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rendering Service (v.@version)</title>
+  <link rel="stylesheet" type="text/css" href="@baseurl@url.base('css/style.css')">
+</head>
+<body>
+<h1>Rendering Service (v.@version)</h1>
+<h2>Upload Options</h2>
+<h3>HTML/Config</h3>
+<ul class="bullet">
+  <li>Upload using a form: <a href="@baseurl@url.route({controller : "uploadForm", action : "display"})" class="tag">@baseurl@url.route({controller : "uploadForm", action : "display"})</a></li>
+  <li>Upload using a form and display result: <a href="@baseurl@url.route({controller : "uploadForm", action : "display", displayFormat : 'png' })" class="tag">@baseurl@url.route({controller : "uploadForm", action : "display", displayFormat : 'png' })</a></li>
+  <li>Upload making a POST call to these services <span class="params">(parameters: html (string), ?config (ini or json string)</span>:
+    <dl>
+      <dt>HTML output:</dt>
+      <dd>@baseurl@url.route({controller : "renderableAPI", action : "upload", outputformat : 'html'})</dd>
+      <dt>JSON output:</dt>
+      <dd>@baseurl@url.route({controller : "renderableAPI", action : "upload", outputformat : 'json'})</dd>
+    </dl>
+  </li>
+  <li>Upload making a GET/POST call to these service <span class="params">(parameters: urlhtml (path to a html resource), ?urlconfig (path to a ini or json resource)</span>:
+    <dl>
+      <dt>HTML output:</dt>
+      <dd>@baseurl@url.route({
+        controller : "renderableAPI", action : "uploadFromUrl", outputformat : 'html',
+        urlhtml : "http://example.com/chart.hml"
+      })</dd>
+      <dt>JSON output:</dt>
+      <dd>@baseurl@url.route({
+        controller : "renderableAPI", action : "uploadFromUrl", outputformat : 'json',
+        urlhtml : "http://example.com/chart.hml"
+      })</dd>
+    </dl>
+  </li>
+</ul>
+<h3>GIST</h3>
+<ul class="bullet">
+  <li>Upload GIST using a form: <a href="@baseurl@url.route({controller : "uploadForm", action : "gist"})" class="tag">@baseurl@url.route({controller : "uploadForm", action : "gist"})</a></li>
+  <li>Upload from GIST using these services:
+    <dl>
+      <dt>HTML output:</dt>
+@{ var path = baseurl+url.route({controller : "gistUpload", action : "importGist", gistid : '1732325', outputformat : 'html'}); }
+      <dd><a href="@path">@path</a></dd>
+      <dt>JSON output:</dt>
+@{ var path = baseurl+url.route({controller : "gistUpload", action : "importGist", gistid : '1732325', outputformat : 'json'}); }
+      <dd><a href="@path">@path</a></dd>
+    </dl>
+  </li>
+</ul>
+
+
+<h2>Download</h2>
+<dl class="bullet">
+@{ var uid = sampleuid; }
+@for(ext in ['html', 'json'])
+{
+  @{ var p = baseurl + url.route({ controller : "renderableAPI", action : "display", uid : null == uid ? 'uid' : uid, outputformat : ext}); }
+  <dt>@ext.toUpperCase() Information:</dt>
+  @if(null == uid)
+  {
+    <dd>@p</dd>
+  } else {
+    <dd><a href="@p">@p</a></dd>
+  }
+}
+</dl>
+
+@if(authorized)
+{
+<h2>Status</h2>
+<ul class="bullet">
+  <li><a href="@baseurl@url.route({ controller : 'setup', action : 'mongodb', auth : auth })">DB</a></li>
+  <li><a href="@baseurl@url.route({ controller : 'setup', action : 'topRenderables', auth : auth })">Renderables</a></li>
+</ul>
+
+<h2>Maintenance</h2>
+<ul class="bullet">
+  <li><a href="@baseurl@url.route({ controller : 'setup', action : 'purgeCache', auth : auth })">Purge Cache</a></li>
+  <li><a href="@baseurl@url.route({ controller : 'setup', action : 'clearCache', auth : auth })">Clear Cache</a></li>
+  <li><a href="@baseurl@url.route({ controller : 'setup', action : 'purgeRenderables', auth : auth })">Purge Unused Renderables</a></li>
+  <li><a href="@baseurl@url.route({ controller : 'setup', action : 'purgeExpiredRenderables', auth : auth })">Purge Expired Renderables</a></li>
+
+  <li><a href="@baseurl@url.route({ controller : 'setup', action : 'displayLogs', auth : auth, format : "json" })">Logs (json)</a></li>
+  <li><a href="@baseurl@url.route({ controller : 'setup', action : 'displayLogs', auth : auth, format : "html" })">Logs (html)</a></li>
+  <li><a href="@baseurl@url.route({ controller : 'setup', action : 'clearLogs', auth : auth })">Clear Logs</a></li>
+</ul>
+
+
+<h2>Setup</h2>
+<ul class="bullet">
+  <li><a href="@baseurl@url.route({ controller : 'setup', action : 'createCollections', auth : auth })">Create Collections</a></li>
+  <li><a href="@baseurl@url.route({ controller : 'setup', action : 'dropCollections', auth : auth })">Drop Collections</a></li>
+  <li><a href="@baseurl@url.route({ controller : 'setup', action : 'dropCache', auth : auth })">Drop Cache</a></li>
+  <li><a href="@baseurl@url.route({ controller : 'setup', action : 'dropRenderables', auth : auth })">Drop Renderables</a></li>
+  <li><a href="@baseurl@url.route({ controller : 'setup', action : 'info', auth : auth })">PHP Info</a></li>
+</ul>
+}
+
+
+</body>
+</html>

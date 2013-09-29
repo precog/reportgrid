@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Download Error</title>
+  <link rel="stylesheet" type="text/css" href="@baseurl@url.base('css/style.css')">
+</head>
+<body>
+<h1>Top #@top used renderables</h1>
+@if(null == renderables || renderables.length == 0)
+{
+	<div class="warning">The list is empty</div>
+} else {
+	<dl>
+	@for(item in renderables)
+	{
+	  <dt><a href="@baseurl@url.route({ controller : "renderableAPI", action : "display", uid : item.uid, outputformat : "html" })">@item.uid</a></dt>
+	  <dd>@item.usages, created on: @Date.fromTime(item.createdOn) @if(item.createdOn != item.lastUsage){, last usage on: @Date.fromTime(item.lastUsage)}</dd>
+	}
+	</dl>
+}
+</body>
+</html>

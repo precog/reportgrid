@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>ReportGrid Renderer</title>
+<link href="http://10.1.10.15/rg/charts/css/rg.css" rel="stylesheet" type="text/css" />
+<link href="http://10.1.10.15/rg/charts/service/samples/css/sample.css" rel="stylesheet" type="text/css" />
+<link href="../css/clean.css" rel="stylesheet" type="text/css" />
+</head>
+<body<?=($config->backgroundColor() ? (' bgcolor="'.$config->backgroundColor().'" style="background-color:' . $config->backgroundColor() .'"') : '')?>>
+<<?=$config->element()?><?=$config->id()?' id="'.$config->id().'"':''?> class="rg<?=$config->className()?' '.$config->className():''?>"<?=($config->backgroundColor() ? (' style="background-color:' . $config->backgroundColor() .'"') : '')?>><?=$config->xml()?></<?=$config->element()?>>
+<script type="text/javascript"><![CDATA[
+setTimeout(function() { RG_READY = true; }, 200);
+]]></script>
+</body>
+</html>

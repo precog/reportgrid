@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="chrome=IE8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>ReportGrid.Queries</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script>
+var API = {
+	samplesService : "service/index.php"
+};
+	</script>
+	<script src="js/queries.js"></script>
+	<style>
+* {
+	font-family: Verdana;
+	font-size: 10px;
+}
+
+h1, h2, h3
+{
+	padding: 0;
+	margin: 0;
+}
+
+h1 {
+	font-size: 120%;
+}
+
+h2 {
+	font-size: 110%;
+}
+
+.sidebar ul
+{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	max-height: 460px;
+	overflow: auto;
+}
+
+.sidebar li
+{
+	display: block;
+	border: 1px solid #ccc;
+	background-color: #eee;
+	text-decoration: none;
+	color: #333;
+	padding: 2px 4px;
+	margin: 0 0 4px 0;
+	cursor: pointer;
+}
+
+.sidebar li.active
+{
+	background-color: #fff;
+	font-weight: bold;
+}
+
+#samplecode {
+	white-space: pre;
+	font-family: monospace;
+}
+
+#samplevisualization iframe {
+	width: 930px;
+	height: 540px;
+	border: none;
+}
+
+.container
+{
+	float: left;
+	border: 1px solid #ccc;
+	padding: 5px;
+	margin: 0 5px 5px 0;
+}
+
+.sidebar
+{
+	width: 160px;
+}
+	</style>
+<script>
+$(document).ready(function(){
+	function parseQueryParameters(url) {
+      var index = url.indexOf('?');
+
+      if (index < 0) return {};
+
+      var query = url.substr(index + 1);
+
+      var keyValuePairs = query.split('&');
+
+      var parameters = {};
+
+      for (var i = 0; i < keyValuePairs.length; i++) {
+        var keyValuePair = keyValuePairs[i];
+
+        var split = keyValuePair.split('=');
+
+        var key = split[0];
+        var value = '';
+
+        if (split.length >= 2) {
+          value = decodeURIComponent(split[1]);
+        }
+
+        parameters[key] = value;
+      }
+
+      return parameters;
+    };
+	$("#samplecurrent").click(function(){
+		var src = $('#samplevisualization iframe').attr('src');
+		var params = parseQueryParameters(window.location.href);
+		if(params.disableCache)
+			src += "&disableCache=true";
+		$("#samplecurrent").attr('href', src);
+		return true;
+	})
+})
+</script>
+</head>
+<body>
+	<div class="container sidebar">
+		<h1><a href="#details" id="samplecurrent">Open Current</a></h1>
+		<h1>Categories:</h1>
+		<ul id="samplecategories"></ul>
+		<h1>Options:</h1>
+		<ul id="sampleoptions"></ul>
+	</div>
+	<div class="container">
+		<h1>Visualization:</h1>
+		<div id="samplevisualization"><iframe></iframe></div>
+	</div>
+	<div class="container">
+		<h1>Code:</h1>
+		<div id="samplecode"></div>
+	</div>
+	<div class="container" id="docpanel">
+		<h2>Description:</h1>
+		<div id="sampledoc"></div>
+	</div>
+</body>
+</html>

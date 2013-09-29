@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title>Color Palettes</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="language" content="en" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+<style>
+* {
+	font-family: Verdana, sans-serif;
+	font-size: 8pt;
+	margin: 0;
+	padding: 0;
+}
+
+body
+{
+	padding: 16px;
+	background-color: #ddd;
+}
+
+h1
+{
+	margin-bottom: 8px;
+	text-align: center;
+}
+
+h2
+{
+	margin-bottom: 2px;
+	text-align: center;
+}
+
+.clear
+{
+	clear: left;
+}
+
+.container
+{
+	border: 1px solid #ccc;
+	padding: 0px 4px 4px;
+	margin-right: 4px;
+	margin-bottom: 4px;
+	float: left;
+	min-width: 360px;
+	background-color: #fff;
+}
+
+ul.palette
+{
+	margin: 0 *;
+}
+
+ul.palette li
+{
+	display: block;
+	float: left;
+	width: 30px;
+	height: 30px;
+/*	margin-right: 2px;
+	border: 1px solid #ccc; */
+}
+</style>
+</head>
+<body>
+<h1>Palettes</h1>
+@for(item in items)
+{
+<div class="container">
+	<h2>@item.name</h2>
+	<ul class="palette">
+		@for(color in item.colors)
+		{
+			<li style="background-color:@color"></li>
+		}
+	</ul>
+	<div class="clear"></div>
+</div>
+}
+</body>
+</html>

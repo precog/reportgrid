@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Visualization Info</title>
+  <link rel="stylesheet" type="text/css" href="@baseurl@url.base('css/style.css')">
+</head>
+<body>
+<h1>Visualization Info</h1>
+<h2>General</h2>
+<dl>
+  <dt>uid:</dt>
+  <dd>@data.uid</dd>
+  <dt>created on:</dt>
+  <dd>@data.createdOn</dd>
+</dl>
+<h2>Duration</h2>
+<dl>
+  <dt>will be erased on:</dt>
+@if(null == data.expiresOn)
+{
+  <dd>will be erased after not being used for @milliToString(data.preserveTimeAfterLastUsage, false)</dd>
+} else {
+  <dd>@data.expiresOn.toString()</dd>
+}
+</dl>
+<h2>Cache</h2>
+<dl>
+  <dt>cache expires after:</dt>
+  <dd>@milliToString(data.cacheExpirationTime, false)</dd>
+</dl>
+<h2>Download</h2>
+<dl class="bullet">
+@for(format in data.formats)
+{
+@{
+  var p = reflectField(data.service, format);
+}
+  <dt>@format.toUpperCase():</dt>
+  <dd><a href="@p">@p</a></dd>
+}
+</dl>
+</body>
+</html>

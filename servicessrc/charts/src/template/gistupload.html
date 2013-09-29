@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Upload GIST</title>
+  <link rel="stylesheet" type="text/css" href="@baseurl@url.base('css/style.css')">
+</head>
+<body>
+<h1>Upload Form</h1>
+@{
+  var action = url.route({ controller : 'uploadForm', action : 'gist' });
+}
+<form method="post" action="@baseurl@action" class="formupload">
+  <ul>
+    <li>
+      <label for="gistid">GIST ID or URL</label>
+      <br>
+      <input type="text" name="gistid" value="@(null == gistid ? '' : gistid)"/>
+      @if(null != error) {
+	    <div class="error">The GIST ID or URL is wrong: @error</div>
+      }
+    </li>
+  </ul>
+  <input type="submit" value="submit">
+<form>
+</body>
+</html>

@@ -1,0 +1,184 @@
+/*
+html5doctor.com Reset Stylesheet v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+*/
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+body{line-height:1}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+nav ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}
+ins{background-color:#ff9;color:#000;text-decoration:none}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+del{text-decoration:line-through}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+input,select{vertical-align:middle}
+
+/* CUSTOM STYLES */
+
+* {
+    font-family: sans-serif;
+}
+
+body
+{
+	padding: 10px;
+	font-size: 90%;
+}
+
+.formupload
+{
+	padding: 10px;
+}
+
+.formupload label
+{
+	font-weight: bold;
+	font-size: 85%;
+}
+
+.formupload li
+{
+	margin-bottom: 10px;
+	list-style: none;
+}
+
+.formupload textarea
+{
+	width: 100%;
+	height: 22em;
+	font-family: monospace;
+	font-size: 13px;
+	padding: 5px;
+}
+
+h1
+{
+	font-size: 110%;
+}
+
+h3
+{
+	font-size: 90%;
+}
+
+h1, h2, h3
+{
+	clear: left;
+	padding: 0.5em 0;
+}
+
+dl
+{
+	margin: 5px 0;
+}
+
+dt
+{
+	float: left;
+	clear: left;
+	min-width: 120px;
+	margin-right: 5px;
+	margin-bottom: 3px;
+	padding: 4px 0px;
+}
+
+dd
+{
+	background-color: #eee;
+	min-height: 1em;
+	float: left;
+	margin-bottom: 3px;
+	font-weight: bold;
+	padding: 5px 10px 2px;
+}
+
+.tag
+{
+	background-color: #eee;
+	min-height: 1em;
+/*	float: left; */
+	margin-bottom: 3px;
+	font-weight: bold;
+	padding: 5px 10px 2px;
+}
+
+.params
+{
+	background-color: #eee;
+	padding: 2px 0px 0px;
+	font-family: monospace;
+	font-size: 90%;
+}
+
+div.error
+{
+	background-color: #AA0000;
+	color: #fff;
+	font-weight: bold;
+	padding: 5px 10px;
+	border: 2px solid #660000;
+}
+
+div.message
+{
+	background-color: #0000AA;
+	color: #fff;
+	font-weight: bold;
+	padding: 5px 10px;
+	border: 2px solid #000066;
+}
+
+ul.bullet, ul.bullet ul
+{
+	list-style: square;
+	padding: 0 0 0 25px;
+	margin: 5px 0;
+}
+
+ul.bullet li
+{
+	margin: 0 0 5px 0;
+	clear: left;
+}
+
+ol.logs
+{
+	padding: 0 0 0 25px;
+}
+
+ol.logs li
+{
+	padding: 0 0 0 5px;
+	margin: 10px 0;
+	clear: left;
+}
+
+.logs div
+{
+	margin-bottom: 2px;
+}
+
+.logs .loc
+{
+	font-size: 73%;
+}
+
+.logs .info
+{
+	font-size: 73%;
+	color: #999;
+}
+
+.logs .msg
+{
+	font-family: monospace;
+	white-space: pre;
+	background-color: #eee;
+	padding: 5px 20px;
+	overflow: auto;
+}

@@ -1,0 +1,13 @@
+-cp src
+-cp ../lib/src
+-lib thx
+-lib hxevents
+-js bin/js/reportgrid-query.js
+-main rg.app.query.JSBridge
+--js-modern
+-dce full
+--macro keep(["js.Boot","Type","rg.query.ReportGridQuery","rg.query.ReportGridBaseQuery"])
+#--dead-code-elimination
+-D js_shims
+#--times
+-debug

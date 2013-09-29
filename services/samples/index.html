@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="chrome=IE8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>ReportGrid.Charts</title>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script>
+var API = {
+	samplesService : "index.php"
+};
+	</script>
+	<script src="../js/charts.js"></script>
+	<style>
+* {
+	font-family: Verdana;
+	font-size: 10px;
+}
+
+h1, h2, h3
+{
+	padding: 0;
+	margin: 0;
+}
+
+h1 {
+	font-size: 120%;
+}
+
+h2 {
+	font-size: 110%;
+}
+
+.sidebar ul
+{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	max-height: 460px;
+	overflow: auto;
+}
+
+.sidebar li
+{
+	display: block;
+	border: 1px solid #ccc;
+	background-color: #eee;
+	text-decoration: none;
+	color: #333;
+	padding: 2px 4px;
+	margin: 0 0 4px 0;
+	cursor: pointer;
+}
+
+.sidebar li.active
+{
+	background-color: #fff;
+	font-weight: bold;
+}
+
+#samplecode {
+	white-space: pre;
+	font-family: monospace;
+}
+
+#samplevisualization iframe {
+	width: 930px;
+	height: 540px;
+	border: none;
+}
+
+.container
+{
+	float: left;
+	border: 1px solid #ccc;
+	padding: 5px;
+	margin: 0 5px 5px 0;
+}
+
+.sidebar
+{
+	width: 160px;
+}
+
+.export
+{
+	font-size: 8px;
+	text-decoration: none;
+	border: 1px solid #ccc;
+	background-color: #eee;
+	padding: 0 2px;
+	color: #000;
+}
+	</style>
+<script>
+$(document).ready(function(){
+//	$("#samplecurrent").click(function(){
+//		$("#samplecurrent").attr('href', src());
+//		return true;
+//	});
+
+	function formathandler(format)
+	{
+		return function()
+		{
+			var url = src();
+			console.log(url);
+			$.getJSON('//api.reportgrid.com/services/viz/samples/up/url.json', {
+				urlhtml: url
+			}, function(data){
+				$('#samplevisualization iframe').attr('src', data.service[format]);
+			});
+		};
+	}
+
+	$("#pdf").click(formathandler('pdf'));
+	$("#png").click(formathandler('png'));
+	$("#jpg").click(formathandler('jpg'));
+	$("#svg").click(formathandler('svg'));
+	$("#html").click(formathandler('html'));
+
+	function src() {
+		return '//api.reportgrid.com/services/viz/samples/' + $('#samplecurrent').attr('href');
+	}
+})
+</script>
+</head>
+<body>
+	<div class="container sidebar">
+		<h1>
+			<a href="#details" id="samplecurrent" target="output">Open</a>
+			<a href="#details" class="export" id="pdf">PDF</a>
+			<a href="#details" class="export" id="png">PNG</a>
+			<a href="#details" class="export" id="jpg">JPG</a>
+			<a href="#details" class="export" id="html">HTML</a>
+			<a href="#details" class="export" id="svg">SVG</a>
+		</h1>
+		<h1>Categories:</h1>
+		<ul id="samplecategories"></ul>
+		<h1>Options:</h1>
+		<ul id="sampleoptions"></ul>
+	</div>
+	<div class="container">
+		<h1>Output:</h1>
+		<div id="samplevisualization"><iframe id="output"></iframe></div>
+	</div>
+	<div class="container">
+		<h1>Code:</h1>
+		<div id="samplecode"></div>
+	</div>
+	<div class="container" id="docpanel">
+		<h2>Description:</h1>
+		<div id="sampledoc"></div>
+	</div>
+</body>
+</html>

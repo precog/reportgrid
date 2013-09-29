@@ -1,0 +1,760 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"le",
+				"length : Int"
+			],
+			[
+				"sub",
+				"substr( pos : Int , ?len : Int ) : String"
+			],
+			[
+				"su",
+				"substr( pos : Int , ?len : Int ) : String"
+			],
+			[
+				"inde",
+				"indexOf( str : String , ?startIndex : Int ) : Int"
+			],
+			[
+				"in",
+				"indexOf( str : String , ?startIndex : Int ) : Int"
+			],
+			[
+				"star",
+				"startsWith( start : String ) : Bool"
+			],
+			[
+				"Spa",
+				"Spaced"
+			],
+			[
+				"where",
+				"where"
+			],
+			[
+				"set",
+				"setField( o : Dynamic , field : String , value : Dynamic ) : Void"
+			],
+			[
+				"setF",
+				"setField( o : Dynamic , field : String , value : Dynamic ) : Void"
+			],
+			[
+				"val",
+				"values : Array<Dynamic>"
+			],
+			[
+				"Reflect",
+				"Reflect"
+			],
+			[
+				"w",
+				"where"
+			],
+			[
+				"gen",
+				"gender"
+			],
+			[
+				"cli",
+				"click"
+			],
+			[
+				"click",
+				"click"
+			],
+			[
+				"unit",
+				"unitvalue : String"
+			],
+			[
+				"setFi",
+				"setField"
+			],
+			[
+				"searchCou",
+				"searchCount( path : String , options : { } , success : (Int , Void) , ?error : (String , Void) ) : Void"
+			],
+			[
+				"pus",
+				"push( x : Array<Unknown<0>> ) : Int"
+			],
+			[
+				"prop",
+				"property : String"
+			],
+			[
+				"clo",
+				"clone( src : clone.T ) : clone.T"
+			],
+			[
+				"executor",
+				"executor"
+			],
+			[
+				"ln",
+				"length"
+			],
+			[
+				"shift",
+				"shift"
+			],
+			[
+				"shi",
+				"shift"
+			],
+			[
+				"length",
+				"length"
+			],
+			[
+				"push",
+				"push"
+			],
+			[
+				"len",
+				"length"
+			],
+			[
+				"map",
+				"map"
+			],
+			[
+				"property",
+				"property"
+			],
+			[
+				"fir",
+				"firstf( arr : Array<firstf.T> , f : (firstf.T , Bool) ) : Null<firstf.T>"
+			],
+			[
+				"properties",
+				"copy() : Array<{ property : String, order : String, limit : Int, event : String }>"
+			],
+			[
+				"clon",
+				"clone( src : clone.T ) : clone.T"
+			],
+			[
+				"axe",
+				"axes"
+			],
+			[
+				"se",
+				"segmenton"
+			],
+			[
+				"params",
+				"params"
+			],
+			[
+				"co",
+				"copyTo( src : { } , dst : { } ) : { }"
+			],
+			[
+				"ax",
+				"axes"
+			],
+			[
+				"form",
+				"format"
+			],
+			[
+				"Sca",
+				"ScaleDistribution [class]"
+			],
+			[
+				"da",
+				"data"
+			],
+			[
+				"fie",
+				"fields( o : Dynamic ) : Array<String>"
+			],
+			[
+				"ex",
+				"execute( ob : rg.util.ChainedExecutor.T ) : Void"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.php",
+			"settings":
+			{
+				"buffer_size": 2758,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "lib/WKPDF.class.php",
+			"settings":
+			{
+				"buffer_size": 8009,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "phantom/renderer.js",
+			"settings":
+			{
+				"buffer_size": 2127,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "lib/config.class.php",
+			"settings":
+			{
+				"buffer_size": 4165,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "template/visualization.template.php",
+			"settings":
+			{
+				"buffer_size": 1279,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "template/xml.template.php",
+			"settings":
+			{
+				"buffer_size": 807,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/HaXe/Hxml.sublime-build",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"tr",
+				"Trailing Spaces: Delete Trailing Spaces"
+			],
+			[
+				"tre",
+				"Set Syntax: Regular Expression"
+			],
+			[
+				"re",
+				"Set Syntax: Regular Expression"
+			],
+			[
+				"tri",
+				"Trailing Spaces: Delete Trailing Spaces"
+			],
+			[
+				"tra",
+				"Trailing Spaces: Delete Trailing Spaces"
+			],
+			[
+				"tria",
+				"Trailing Spaces: Delete Trailing Spaces"
+			],
+			[
+				"trai",
+				"Trailing Spaces: Delete Trailing Spaces"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"insl",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Set Syntax: HaXe2"
+			]
+		],
+		"width": 593.0
+	},
+	"console":
+	{
+		"height": 310.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/francoponticelli/Projects/reportgrid/visualizations/staticrenderer/info.php",
+		"/Users/francoponticelli/Projects/reportgrid/visualizations/staticrenderer/lib/KLogger.class.php",
+		"/Users/francoponticelli/Projects/reportgrid/visualizations/visualizations/visualizations.sublime-project",
+		"/Users/francoponticelli/Projects/reportgrid/visualizations/haxe/visualizations/src/rg/data/source/rgquery/QueryParser.hx",
+		"/Users/francoponticelli/Projects/reportgrid/visualizations/haxe/visualizations/src/rg/controller/MVPOptions.hx",
+		"/Users/francoponticelli/Projects/reportgrid/visualizations/haxe/visualizations/bin/js/reportgrid-core.js",
+		"/Users/francoponticelli/Projects/reportgrid/visualizations/haxe/visualizations/deploy.sh",
+		"/Users/francoponticelli/Projects/reportgrid/visualizations/src/main/haxe/vis/test/rg/data/source/rgquery/transform/TestTransformCount.hx",
+		"/Users/francoponticelli/Projects/reportgrid/visualizations/src/main/haxe/vis/src/rg/data/DataProcessor.hx",
+		"/Users/francoponticelli/Projects/reportgrid/visualizations/src/main/haxe/vis/src/rg/data/Variable.hx",
+		"/Users/francoponticelli/Projects/reportgrid/visualizations/src/main/haxe/vis/src/rg/data/AxisOrdinal.hx",
+		"/Users/francoponticelli/Projects/reportgrid/visualizations/src/main/haxe/vis/bin/test.html",
+		"/Users/francoponticelli/Projects/reportgrid/visualizations/src/main/haxe/vis/test/rg/data/TestAxisGroupByTime.hx",
+		"/Users/francoponticelli/Projects/reportgrid/visualizations/src/main/haxe/vis/src/rg/data/source/DataSourceReportGrid.hx",
+		"/Users/francoponticelli/Projects/reportgrid/visualizations/src/main/haxe/vis/test/rg/data/source/TestRGDataSource.hx",
+		"/Users/francoponticelli/Projects/reportgrid/visualizations/src/main/haxe/vis/test/TestAll.hx",
+		"/Users/francoponticelli/Projects/reportgrid/visualizations/src/main/haxe/vis/test/rg/data/source/rgquery/TestQueryParser.hx",
+		"/Users/francoponticelli/Projects/reportgrid/visualizations/src/main/haxe/vis/test/rg/data/TestDataProcessor.hx",
+		"/Users/francoponticelli/Projects/reportgrid/visualizations/src/main/haxe/vis/src/rg/data/source/rgquery/QueryParser.hx",
+		"/Users/francoponticelli/Projects/reportgrid/visualizations/src/main/haxe/vis/src/rg/data/ScaleDistribution.hx",
+		"/Users/francoponticelli/Projects/reportgrid/visualizations/src/main/haxe/vis/test/rg/data/source/rgquery/MockRGExecutor.hx",
+		"/Users/francoponticelli/Projects/reportgrid/visualizations/src/main/haxe/vis/test/rg/controller/factory/TestFactoryVariableContexts.hx",
+		"/Users/francoponticelli/Projects/reportgrid/visualizations/src/main/haxe/vis/src/rg/data/AxisOrdinalStats.hx",
+		"/Users/francoponticelli/Projects/reportgrid/visualizations/src/main/haxe/vis/src/rg/data/AxisOrdinalFixedValues.hx",
+		"/Users/francoponticelli/Projects/reportgrid/visualizations/src/main/haxe/vis/test/rg/data/source/rgquery/transform/TestCountTransform.hx",
+		"/Users/francoponticelli/Projects/reportgrid/visualizations/src/main/haxe/vis/test/rg/data/source/rgquery/transform/TestCountTimeIntersectTransform.hx",
+		"/Users/francoponticelli/Projects/reportgrid/visualizations/src/main/haxe/vis/test/rg/data/source/rgquery/transform/TestTransformIntersectTime.hx",
+		"/Users/francoponticelli/Projects/reportgrid/visualizations/src/main/haxe/vis/test/rg/data/source/rgquery/transform/TestBase.hx",
+		"/Users/francoponticelli/Projects/reportgrid/visualizations/src/main/haxe/vis/test/rg/data/source/rgquery/transform/TestCountTimeSeriesTransform.hx",
+		"/Users/francoponticelli/Projects/reportgrid/visualizations/src/main/haxe/vis/test/rg/data/source/rgquery/transform/TestTransformTimeSeries.hx",
+		"/Users/francoponticelli/Projects/reportgrid/visualizations/src/main/haxe/vis/src/rg/view/svg/chart/FunnelChart.hx",
+		"/Users/francoponticelli/Projects/thx/fix.pl",
+		"/Users/francoponticelli/Projects/thx/src/thx/color/Colors.hx",
+		"/Users/francoponticelli/Projects/thx/src/Ints.hx",
+		"/usr/local/removetrailingspaces/rmts",
+		"/Users/francoponticelli/Projects/thx/src/Enums.hx.done",
+		"/Users/francoponticelli/Projects/thx/rmts",
+		"/Users/francoponticelli/Projects/thx/.git/hooks/pre-commit",
+		"/Users/francoponticelli/Library/Application Support/Sublime Text 2/Packages/HaXe/HaxeComplete.py",
+		"/Users/francoponticelli/Projects/thx/src/thx/xml/NodeFormat.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/xml/NormalizeNewlineValueFormat.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/xml/NormalizeWhitespaceValueFormat.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/xml/ValueFormat.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/xml/XmlWriter.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/validation/CustomValidator.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/validation/DateGranularityRangeValidator.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/validation/DateRangeValidator.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/validation/EmailValidator.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/validation/IncrementValidator.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/validation/OptionValidator.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/validation/PatternValidator.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/validation/RangeValidator.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/validation/SingleLineValidator.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/validation/StringLengthValidator.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/validation/UrlValidator.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/validation/Validator.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/util/Imports.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/util/MacroVersion.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/util/Message.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/util/Results.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/util/TypeFactory.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/util/TypeServiceLocator.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/util/Version.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/type/Rttis.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/translation/PluralForms.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/translation/EmptyTranslation.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/translation/DictionaryTranslation.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/translation/DBTranslation.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/text/Paths.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/text/Inflections.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/svg/Symbol.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/svg/PathGeoJson.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/svg/LineInterpolators.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/svg/LineInternals.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/svg/Line.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/svg/Diagonal.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/svg/Chord.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/svg/Area.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/svg/Arc.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/number/NumberParser.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/math/Random.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/math/Equations.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/math/Const.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/math/scale/Quantize.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/math/scale/Quantile.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/math/scale/Pow.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/math/scale/Ordinal.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/math/scale/NumericScale.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/math/scale/Log.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/math/scale/LinearT.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/math/scale/Linears.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/math/scale/LinearInt.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/math/scale/Linear.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/macro/Macros.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/json/JsonEncoder.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/json/JsonDecoder.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/json/Json.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/json/GeoJson.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/js/Transition.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/js/Timer.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/js/Svg.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/js/SizzleEngine.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/js/Sizzle.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/js/Selection.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/js/Group.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/js/Dom.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/js/ClientHost.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/js/AccessTweenText.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/js/AccessTweenStyle.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/js/AccessTweenAttribute.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/js/AccessTween.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/js/AccessText.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/js/AccessStyle.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/js/AccessProperty.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/js/AccessHtml.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/js/AccessClassed.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/js/AccessAttribute.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/js/Access.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/js/behavior/Zoom.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/ini/IniEncoder.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/ini/IniDecoder.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/html/UnquotedHtmlAttributeFormat.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/html/TextHandler.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/html/HtmlFormat.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/html/HtmlDocumentFormat.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/html/HtmlAttributeFormat.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/html/Html.hx",
+		"/Users/francoponticelli/Projects/thx/src/thx/html/Element.hx"
+	],
+	"find":
+	{
+		"height": 33.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"/Users/francoponticelli/Projects/reportgrid/visualizations/src/main/haxe/vis"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"backgroundColor",
+			"url(",
+			"baseUrl",
+			"path(",
+			"PATH",
+			"_getCPU",
+			"WKPDF_BASE_PATH",
+			"_pipeExec",
+			"tmp",
+			"echo",
+			"WKPDF_BASE_PATH",
+			"+",
+			"+ ",
+			" +",
+			"+",
+			"echo",
+			"exit",
+			"delete",
+			"JSON",
+			"anal",
+			"addWhereCondition",
+			"parseValue",
+			"_PNAME",
+			"TestAxisGroupByTime",
+			"where",
+			"\"clic",
+			"length",
+			"remove",
+			"trace",
+			"where",
+			"Equality",
+			"chainExecution",
+			"chartopt",
+			"onclick",
+			"factoryDataSource",
+			"__init",
+			"this.execute",
+			"Function",
+			"$bind"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"parallelExecution"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 5,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.php",
+					"settings":
+					{
+						"buffer_size": 2758,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								908,
+								908
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML5/Syntaxes/HTML 5.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 397.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "lib/WKPDF.class.php",
+					"settings":
+					{
+						"buffer_size": 8009,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 8,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "phantom/renderer.js",
+					"settings":
+					{
+						"buffer_size": 2127,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1389,
+								1389
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "lib/config.class.php",
+					"settings":
+					{
+						"buffer_size": 4165,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3499,
+								3499
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML5/Syntaxes/HTML 5.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1366.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "template/visualization.template.php",
+					"settings":
+					{
+						"buffer_size": 1279,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								416,
+								568
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML5/Syntaxes/HTML 5.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "template/xml.template.php",
+					"settings":
+					{
+						"buffer_size": 807,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML5/Syntaxes/HTML 5.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 27.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"parser",
+				"vis/test/rg/data/source/rgquery/TestQueryParser.hx"
+			],
+			[
+				"testrg",
+				"vis/test/rg/data/source/TestRGDataSource.hx"
+			],
+			[
+				"testaxis",
+				"vis/test/rg/data/TestAxisGroupByTime.hx"
+			],
+			[
+				"axis",
+				"vis/src/rg/data/AxisOrdinal.hx"
+			],
+			[
+				"trstda",
+				"vis/test/rg/data/TestDataProcessor.hx"
+			],
+			[
+				"tra",
+				"std/flash/geom/Transform.hx"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 236.0,
+	"status_bar_visible": true
+}

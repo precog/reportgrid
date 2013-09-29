@@ -1,0 +1,9 @@
+.rg .panel > rect
+{
+	shape-rendering: crispEdges;
+	fill: #ff9;
+	fill-opacity: 0.4;
+	stroke: #993;
+	stroke-width: 1;
+	stroke-opacity: 0.4;
+}

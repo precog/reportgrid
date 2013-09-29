@@ -1,0 +1,9 @@
+div
+{
+    background-color: rgba(60,60,60,0.25);
+    background-image: url(debug/tl.png), url(debug/tr.png), url(debug/br.png), url(debug/bl.png);
+    background-repeat: no-repeat;
+    background-position: top left, top right, bottom right, bottom left;
+
+    min-height: 5px;
+}

@@ -1,0 +1,2 @@
+version 1.5.30.9202
+- added error handling using options : { error : function(e) { } }

@@ -1,0 +1,5 @@
+-cp src
+-lib thx
+-lib erazor
+-php bin
+-main Main

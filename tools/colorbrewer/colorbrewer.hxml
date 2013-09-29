@@ -1,0 +1,4 @@
+-cp src
+-lib thx
+-neko bin/colorbrewer.n
+-main Main

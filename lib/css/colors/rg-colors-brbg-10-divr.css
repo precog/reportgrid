@@ -1,0 +1,151 @@
+/* Colors from www.ColorBrewer.org by Cynthia A. Brewer, Geography, Pennsylvania State University. */
+.rg .stroke-0, .rg .stroke-10, .rg .stroke-20, .rg .stroke-30
+{
+border-color: #003C30; stroke: #003C30;
+}
+
+.rg .fill-0, .rg .fill-10, .rg .fill-20, .rg .fill-30
+{
+background-color: #003C30; fill: #003C30;
+}
+
+.rg .color-0, .rg .color-10, .rg .color-20, .rg .color-30
+{
+color: #003C30; fill: #003C30;
+}
+
+.rg .stroke-1, .rg .stroke-11, .rg .stroke-21, .rg .stroke-31
+{
+border-color: #01665E; stroke: #01665E;
+}
+
+.rg .fill-1, .rg .fill-11, .rg .fill-21, .rg .fill-31
+{
+background-color: #01665E; fill: #01665E;
+}
+
+.rg .color-1, .rg .color-11, .rg .color-21, .rg .color-31
+{
+color: #01665E; fill: #01665E;
+}
+
+.rg .stroke-2, .rg .stroke-12, .rg .stroke-22
+{
+border-color: #35978F; stroke: #35978F;
+}
+
+.rg .fill-2, .rg .fill-12, .rg .fill-22
+{
+background-color: #35978F; fill: #35978F;
+}
+
+.rg .color-2, .rg .color-12, .rg .color-22
+{
+color: #35978F; fill: #35978F;
+}
+
+.rg .stroke-3, .rg .stroke-13, .rg .stroke-23
+{
+border-color: #80CDC1; stroke: #80CDC1;
+}
+
+.rg .fill-3, .rg .fill-13, .rg .fill-23
+{
+background-color: #80CDC1; fill: #80CDC1;
+}
+
+.rg .color-3, .rg .color-13, .rg .color-23
+{
+color: #80CDC1; fill: #80CDC1;
+}
+
+.rg .stroke-4, .rg .stroke-14, .rg .stroke-24
+{
+border-color: #C7EAE5; stroke: #C7EAE5;
+}
+
+.rg .fill-4, .rg .fill-14, .rg .fill-24
+{
+background-color: #C7EAE5; fill: #C7EAE5;
+}
+
+.rg .color-4, .rg .color-14, .rg .color-24
+{
+color: #C7EAE5; fill: #C7EAE5;
+}
+
+.rg .stroke-5, .rg .stroke-15, .rg .stroke-25
+{
+border-color: #F6E8C3; stroke: #F6E8C3;
+}
+
+.rg .fill-5, .rg .fill-15, .rg .fill-25
+{
+background-color: #F6E8C3; fill: #F6E8C3;
+}
+
+.rg .color-5, .rg .color-15, .rg .color-25
+{
+color: #F6E8C3; fill: #F6E8C3;
+}
+
+.rg .stroke-6, .rg .stroke-16, .rg .stroke-26
+{
+border-color: #DFC27D; stroke: #DFC27D;
+}
+
+.rg .fill-6, .rg .fill-16, .rg .fill-26
+{
+background-color: #DFC27D; fill: #DFC27D;
+}
+
+.rg .color-6, .rg .color-16, .rg .color-26
+{
+color: #DFC27D; fill: #DFC27D;
+}
+
+.rg .stroke-7, .rg .stroke-17, .rg .stroke-27
+{
+border-color: #BF812D; stroke: #BF812D;
+}
+
+.rg .fill-7, .rg .fill-17, .rg .fill-27
+{
+background-color: #BF812D; fill: #BF812D;
+}
+
+.rg .color-7, .rg .color-17, .rg .color-27
+{
+color: #BF812D; fill: #BF812D;
+}
+
+.rg .stroke-8, .rg .stroke-18, .rg .stroke-28
+{
+border-color: #8C510A; stroke: #8C510A;
+}
+
+.rg .fill-8, .rg .fill-18, .rg .fill-28
+{
+background-color: #8C510A; fill: #8C510A;
+}
+
+.rg .color-8, .rg .color-18, .rg .color-28
+{
+color: #8C510A; fill: #8C510A;
+}
+
+.rg .stroke-9, .rg .stroke-19, .rg .stroke-29
+{
+border-color: #543005; stroke: #543005;
+}
+
+.rg .fill-9, .rg .fill-19, .rg .fill-29
+{
+background-color: #543005; fill: #543005;
+}
+
+.rg .color-9, .rg .color-19, .rg .color-29
+{
+color: #543005; fill: #543005;
+}
+

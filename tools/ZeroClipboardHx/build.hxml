@@ -1,0 +1,6 @@
+-swf bin/ZeroClipboard.swf
+-swf-version 9
+-swf-header 1:1:30:000000
+-main ZeroClipboard
+-cp src
+-dce full

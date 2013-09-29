@@ -1,0 +1,800 @@
+@import url('colors/rg-colors-default.css');
+
+.rg
+{
+	fill: none;
+	stroke: none;
+	position: relative;
+}
+
+/* SVG */
+.rg line, .rg path
+{
+	stroke-width: 1;
+	stroke: #999;
+}
+
+.rg text, .rg tspan
+{
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif;
+	color:#666;
+	font-size:11px;
+	line-height:14px;
+	fill:#666;
+	stroke-width: 0;
+	text-rendering: optimizelegibility;
+}
+
+.rg .title .label text
+{
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.rg .stream-chart path
+{
+
+}
+
+.rg .group, .rg .group path:hover
+{
+	-webkit-transition: all 0.25s ease-in-out;
+	-moz-transition: all 0.25s ease-in-out;
+	-o-transition: all 0.25s ease-in-out;
+	-ms-transition: all 0.25s ease-in-out;
+	transition: all 0.25s ease-in-out;
+}
+
+.rg .group:hover path
+{
+	opacity: 1.0;
+}
+
+/* CHART DESIGN */
+.rg
+{
+	fill: none;
+	stroke: none;
+
+
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+.rg g.group
+{
+//	stroke-width: 5;
+}
+
+.rg .pie-chart g.group, .rg .stream-chart g.group
+{
+	stroke-width: 3;
+	stroke-miterjoin:miter;
+	stroke-miterlimit:1;
+}
+
+.rg .pie-chart g.group path
+{
+	stroke: #333;
+	stroke-opacity: 0.4;
+}
+
+.rg .line-chart g.group path.gradient
+{
+	fill:none;
+	stroke-width: 1;
+}
+
+.rg .line-chart g.group path.area
+{
+	stroke: none;
+	fill-opacity: 0.2;
+}
+
+.rg .line-chart g.group path.noeffect
+{
+	fill:none;
+	stroke-width: 2;
+}
+
+.rg .line-chart g.group path.dropshadow
+{
+	fill:none;
+	stroke-width: 2;
+}
+
+.rg .line-chart g.group path.shadow
+{
+	fill:none;
+	stroke-width: 2;
+	stroke-opacity: 0.4;
+	stroke: #666666;
+}
+
+.rg .line-chart g.group path.grad-0
+{
+	fill:none;
+	stroke-width: 3;
+	stroke-opacity: 1.0;
+}
+
+.rg .line-chart g.group path.grad-1
+{
+	fill:none;
+	stroke-width: 5;
+	stroke-opacity: 1.0;
+}
+
+.rg .line-chart g.group .symbols path
+{
+	fill: #fff;
+	stroke: inherit;
+}
+
+
+.rg .line-chart path.line:hover
+{
+	stroke-width: 4.5;
+}
+
+#tooltip
+{
+	text-align: center;
+	font-weight: bold;
+	background-color: #ffc;
+	border: 1px solid #cc6;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif;
+	color:#333;
+	font-size:11px;
+	line-height:14px;
+	fill:#333;
+	padding: 3px 8px;
+
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+
+	-moz-box-shadow: 2px 2px 3px #666;
+	-webkit-box-shadow: 2px 2px 3px #666;
+	box-shadow: 2px 2px 3px #666;
+}
+
+.rg g.linechart-highlighter line, line.rule
+{
+	stroke-width: 1;
+	shape-rendering: crispEdges;
+	stroke-dasharray: 1, 1;
+	stroke: #000;
+}
+
+.rg g.linechart-highlighter rect
+{
+	fill: #fff;
+	stroke: #999;
+	stroke-width: 1px;
+}
+
+.rg line.rule
+{
+	stroke: #999;
+}
+
+.rg g.tick line
+{
+	stroke-width: 1;
+	stroke: #999;
+}
+
+.rg g.tick line.major
+{
+	stroke-width: 1;
+	stroke: #333;
+}
+
+.rg g.rule line
+{
+	stroke-width: 1;
+	stroke: #ccc;
+	stroke-opacity: 0.5;
+	stroke-dasharray: 1,3;
+	shape-rendering: crispEdges; 
+}
+
+.rg g.rule line.major
+{
+	stroke-width: 1;
+	stroke: #999;
+	stroke-dasharray: 0;
+	stroke-opacity: 0.5;
+/*	stroke-dasharray: 3,5; */
+	shape-rendering: crispEdges;
+}
+
+.rg rect.panel-frame
+{
+	fill: #fff;
+	fill-opacity: 0;
+}
+
+.rg .dimension-0 text
+{
+	font-weight: bold;
+}
+
+.rg .line-chart.dimension-1 path.line
+{
+	stroke: #d62728 !important;
+}
+
+.rg .dimension-1 text
+{
+	fill: #d62728;
+	stroke-width: 0 !important;
+	font-weight: bold;
+}
+
+/* TO REMOVE AFTER INTEGRATION BETWEEN VIZ AND CHARTS */
+.rg ul.leaderboard
+{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.rg ul.leaderboard li.nogradient
+{
+	background-image: none;
+	text-shadow: 1px 1px 1px #999;
+}
+
+.rg ul.leaderboard li
+{
+	font-family:Tahoma,Arial,Helvetica,sans-serif;
+	font-size: 9pt;
+	color: #222;
+	background-color: #fff;
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		right top,
+		color-stop(0.0, rgb(252,252,252)),
+		color-stop(1, rgb(225,225,225))
+	);
+	background-image: -moz-linear-gradient(
+		left center,
+		rgb(252,252,252) 0%,
+		rgb(225,225,225) 100%
+	);
+
+	background-repeat: repeat-y;
+	border-width: 2px;
+	border-style: solid;
+	margin: 0 0 4px 0;
+	max-width: 200px;
+	padding: 4px 6px;
+
+	font-weight: bold;
+
+	-webkit-text-shadow: 0 1px 0 #fff;
+	-moz-text-shadow: 0 1px 0 #fff;
+	text-shadow: 0 1px 0 #fff;
+
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+
+}
+/* END REMOVE */
+
+.rg div.leaderboard *
+{
+	font-family:Tahoma,Arial,Helvetica,sans-serif;
+	font-size: 11pt;
+	padding: 0px;
+	margin: 0px;
+}
+
+.rg div.leaderboard ul
+{
+	list-style: none;
+}
+
+.rg div.leaderboard li
+{
+	position: relative;
+	width: 100%;
+	clear: left;
+	margin-bottom: -6px;
+}
+
+.rg div.leaderboard .background, .rg div.leaderboard .barback
+{
+	opacity: 0.1;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -10;
+}
+
+.rg div.leaderboard .labels
+{
+	margin: 4px;
+	color: #1F77B4; /* THIS NEEDS TO GO INTO THE PALETTES */
+	height: 2.5em;
+	line-height: 2em;
+	vertical-align: 50%;
+}
+
+.rg div.leaderboard .rank
+{
+	float: left;
+	background-color: #ffffff;
+	padding: 0;
+	margin: 6px 12px 6px 3px;
+	width: 2em;
+	height: 2em;
+	text-align: center;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	clear: left;
+}
+
+.rg div.leaderboard .description
+{
+	display: block;
+	float: left;
+	padding: 6px 0;
+}
+
+.rg div.leaderboard .value
+{
+	display: block;
+	float: right;
+	color: #FF7F0E; /* THIS NEEDS TO GO INTO THE PALETTES */
+	padding: 6px 4px;
+}
+
+.rg div.leaderboard .barpadding
+{
+	padding: 0px 6px 6px 6px;
+}
+
+.rg div.leaderboard .barback
+{
+	opacity: 0.2;
+}
+
+.rg div.leaderboard .barcontainer
+{
+	position: relative;
+}
+
+.rg div.leaderboard .barcontainer, .rg div.leaderboard .bar, .rg div.leaderboard .barback
+{
+	height: 2px;
+}
+
+.rg div.leaderboard .bar
+{
+	opacity: 1;
+}
+
+.rg div.clear
+{
+	clear: left;
+}
+/* PIVOT TABLE */
+.rg table.pivot-table
+{
+	clear:left;
+	border-spacing:0;
+	font-family:Tahoma,Arial,Helvetica,sans-serif;
+	font-size: 10pt;
+}
+
+.rg .pivot-table td
+{
+	border-left: 1px solid #f0f0f0;
+	border-right: 1px solid #CECECE;
+	border-top: 1px solid #f0f0f0;
+	border-bottom: 1px solid #CECECE;
+	padding: 1px 6px 1px 3px;
+	text-align: right;
+
+	font-size: 11px;
+	text-shadow: 1px 1px 1px #aaa;
+	-moz-text-shadow: 0.5px 0.25px 1px #aaa;
+	min-width: 40px;
+	background-color: #fff;
+}
+
+.rg .pivot-table th
+{
+	border-left: 1px solid #f0f0f0;
+	border-top: 1px solid #f0f0f0;
+	border-right: 1px solid #969696;
+	border-bottom: 1px solid #969696;
+	background-color: #e4e4e4;
+	padding: 0 2px 0 3px;
+	text-shadow: 1px 1px 0 #FFFFFF;
+	-moz-text-shadow: 1px 1px 0 #FFFFFF;
+	-webkit-text-shadow: 1px 1px 0 #FFFFFF;
+	font-weight: normal;
+	color: #000000;
+}
+
+.rg .pivot-table tfoot th.column.total, .rg .pivot-table tbody th.row.total, .rg .pivot-table tfoot th.table.total
+{
+	font-weight: bold;
+	font-size: 10px;
+	text-align: right;
+	padding-right: 4px;
+}
+
+.rg .pivot-table thead th.col-header, .rg .pivot-table thead th.row-header
+{
+	font-weight: bold;
+	padding: 0px 6px;
+	font-size: 10px;
+	background-color: #eee;
+	color: #444;
+}
+
+.rg .pivot-table th.column.value, .rg .pivot-table th.row.value
+{
+	font-weight: bold;
+	padding: 2px 6px;
+	font-size: 11px;
+}
+
+.rg .pivot-table thead th
+{
+	text-align: center;
+}
+
+.rg .pivot-table tbody th
+{
+	white-space: nowrap;
+	text-align: left;
+}
+
+.rg .pivot-table td:hover
+{
+	border: 1px solid #0026FF !important;
+}
+
+.rg.pivot-table .spacer
+{
+	background: none;
+	border: 0;
+}
+
+.rg .anchor-line
+{
+	shape-rendering: crispEdges;
+	stroke: #999;
+	stroke-width: 1;
+}
+
+.rg .bar-chart rect.bar
+{
+	shape-rendering: crispEdges;
+	stroke-width: 1;
+}
+
+.rg .border
+{
+	stroke: #666;
+	shape-rendering: crispEdges;
+}
+
+.rg .label text
+{
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: 11px;
+	fill: #fff;
+	stroke: none;
+}
+
+.rg .label text.outline
+{
+	fill: none;
+	stroke: #555;
+	stroke-width: 2px;
+	stroke-opacity: 1;
+}
+
+.rg .label text.shadow
+{
+	fill: #000000;
+	stroke-width: 3px;
+	stroke: #000000;
+	opacity: 0.15;
+}
+
+.rg .label text.nooutline
+{
+	fill: #333;
+	font-weight: normal
+}
+
+.rg text.shadow.nooutline
+{
+	stroke-width: 1px;
+}
+
+.rg text.outline.noshadow
+{
+	stroke-width: 2px;
+	stroke: #555;
+}
+
+.rg .tick .label text
+{
+	font-size: 9px;
+}
+
+.rg .label text.outline
+{
+	stroke-width: 2px;
+	stroke-opacity: 1;
+}
+
+.rg .scatter-graph text
+{
+	font-size: 6pt;
+}
+
+.rg .scatter-graph g.symbol path
+{
+	stroke: inherit;
+	fill: none;
+}
+
+.rg .pie-chart path
+{
+	stroke-width: 1;
+}
+
+.rg .funnel-chart .funnel-outside
+{
+	stroke: none;
+}
+
+.rg .funnel-chart .arrow path
+{
+	stroke-width: 0px;
+	stroke: none;
+	fill: #fd3;
+}
+
+.rg .funnel-chart .arrow text
+{
+	font-size: 10px;
+	font-weight: bold;
+}
+
+.rg path.balloon-connector
+{
+	stroke: #999;
+	stroke-width: 1;
+	stroke-dasharray: 2, 1;
+}
+
+.rg .balloon .label text.nooutline, .rg .balloon .label text.shadow.nooutline
+{
+	font-size: 10px;
+	font-weight: bold;
+}
+
+.rg .balloon path.bg
+{
+	fill : #fafafa;
+	stroke : #ddd;
+	fill-opacity : 1;
+	stroke-width : 1;
+}
+
+.rg .balloon path.shadow
+{
+	opacity : 0.4;
+	fill : #000;
+	stroke : #000;
+	stroke-width : 1.5;
+}
+
+
+.rg .heat-grid rect
+{
+	shape-rendering: crispEdges;
+	stroke-width: 1;
+}
+
+
+.rg.menu
+{
+	border:1px solid #CCC;
+    border-radius:2px;
+	width: 20px;
+	height: 20px;
+	background-image : url(images/button-download.png);
+	background-color : rgba(255,255,255,0.75);
+}
+
+.rg.menu div.options
+{
+	background-image : url(images/spinner.gif);
+	background-repeat: no-repeat;
+	background-position: -1000px -1000px;
+}
+
+.rg.menu.downloading
+{
+	background-image : url(images/spinner.gif);
+	border: none;
+}
+
+.rg.menu div.options
+{
+    display: none;
+	border:1px solid #CCC;
+    border-radius:2px;
+	float:left;
+	margin-top: 20px;
+	margin-left: -1px;
+	background-color : rgba(255,255,255,0.9);
+	z-index: 10000;
+	position: absolute;
+}
+
+.rg.menu ul
+{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.rg.menu ul li
+{
+	font-family: Helvetica, Arial, Sans-Serif;
+	color:#999;
+	font-size: 80%;
+	text-decoration: none;
+	display: block;
+	padding-left: 1em;
+	padding-right: .3em;
+	line-height: 200%;
+	cursor: pointer;
+}
+
+.rg.menu div.title
+{
+	border-bottom: 1px solid #CCC;
+	font-family: Helvetica, Arial, Sans-Serif;
+	color:#999;
+	font-size: 85%;
+	border-bottom: 1px solid #CCC;
+	padding-left:.3em;
+	padding-right: .3em;
+	line-height: 200%;
+}
+
+.rg.menu:hover > div.options
+{
+    display: block;
+}
+
+.rg.menu.downloading > div.options
+{
+	display: none;
+}
+
+.rg.menu.top
+{
+	position: absolute;
+	top: 0px;
+}
+
+.rg.menu.bottom
+{
+	position: absolute;
+	bottom: 0px;
+}
+
+.rg.menu.left
+{
+	left: 0px;
+}
+
+.rg.menu.right
+{
+	right: 0px;
+}
+
+.rg .sankey .rule
+{
+	stroke: none;
+}
+
+.rg .sankey .fill
+{
+	stroke: none;
+	fill-opacity: 0.4;
+}
+
+.rg .sankey .over .fill, .rg .sankey .over .fill.node
+{
+	fill-opacity: 0.8;
+	stroke-opacity: 1;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+
+.rg .sankey .fill.nonode
+{
+	stroke: none;
+}
+
+.rg .sankey .fill.node
+{
+	stroke: #fff;
+	stroke-width: 1;
+	stroke-opacity: 1;
+	fill-opacity: 0.6;
+}
+
+.rg .sankey .stroke
+{
+	stroke: #fff;
+	stroke-opacity: 0.7;
+}
+
+.rg .sankey g.label.node text
+{
+	font-size: 9px;
+	fill: #fff;
+	stroke: none;
+}
+
+.rg .sankey g.label.node.first text
+{
+	font-size: 16px;
+	fill: #fff;
+	stroke: none;
+}
+
+.rg .sankey g.label.edge text
+{
+	font-size: 11px;
+	fill: #fff;
+}
+
+.rg .sankey g.label.edge text.shadow, .rg .sankey g.label.node text.shadow
+{
+	opacity: 0.15;
+	stroke: #000;
+}
+
+.rg .sankey .image
+{
+	stroke: #000;
+	stroke-width: 1;
+/*	shape-rendering: crispEdges; */
+}
+
+.rg .sankey image
+{
+	image-rendering: optimizeQuality;
+	overflow: hidden;
+}

@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>ReportGrid Renderer</title>
+<script src="http://api.reportgrid.com/js/reportgrid-core.js?tokenId=66178806-8389-42CA-9E6B-86B4285F487A" type="text/javascript"></script>
+<script src="http://api.reportgrid.com/js/reportgrid-viz.js" type="text/javascript"></script>
+<link href="http://api.reportgrid.com/css/rg.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="chart" class="styled other"></div>
+<script type="text/javascript">
+
+var params = {"path":"\/snapEngage\/11155847\/bf7337a6-6c7f-4ff9-8e50-a7bb771c036a\/","event":"case","property":"sourceType"};
+params.options = params.options || {};
+params.options.ready = function() { RG_READY = true; };
+params.options.track = { enabled : false };
+params.options.animation = { animated : false };
+params.options.visualization = params.options.visualization || "linechart";
+
+ReportGrid.viz("#chart", params);
+
+window.setTimeout(function() {
+    RG_READY = true;
+}, 15000);
+</script>
+</body>
+</html>

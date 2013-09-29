@@ -1,0 +1,6 @@
+[
+	{ "country" : "USA",       "count" : 226710 },
+	{ "country" : "UK",        "count" : 56990 },
+	{ "country" : "Canada",    "count" : 19700 },
+	{ "country" : "Australia", "count" : 15316 },
+	{ "country" : "Other",     "count" : 18581 }]

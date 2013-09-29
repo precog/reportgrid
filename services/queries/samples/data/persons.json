@@ -1,0 +1,11 @@
+[
+	{ name : "Daniel",  officecenterdist : 10000 },
+	{ name : "Derek",   officecenterdist : 100 },
+	{ name : "Franco",  officecenterdist : 2 },
+	{ name : "Jason",   officecenterdist : 1 },
+	{ name : "John",    officecenterdist : 3 },
+	{ name : "Kris",    officecenterdist : 1 },
+	{ name : "Matthew", officecenterdist : 1 },
+	{ name : "Nick",    officecenterdist : 5 },
+	{ name : "Olyssa",  officecenterdist : 2 }
+]

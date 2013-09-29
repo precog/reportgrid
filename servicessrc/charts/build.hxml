@@ -1,0 +1,9 @@
+-php bin
+-cp src
+-cp ufront
+-cp erazor
+-cp thx
+-lib hscript
+-main App
+-D ufront
+-D erazor

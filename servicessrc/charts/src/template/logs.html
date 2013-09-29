@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Logs</title>
+  <link rel="stylesheet" type="text/css" href="@baseurl@url.base('css/style.css')">
+</head>
+<body>
+<h1>Logs</h1>
+<ol class="logs">
+@if(data.length == 0)
+{
+	<div class="message">no logs are available</div>
+} else {
+	@for(log in data)
+	{
+	  <li>
+	    <div class="loc">@Date.fromTime(log.time).toString() on @log.server</div>
+	    <div class="info">@(log.pos.fileName.split('.').shift() == log.pos.className.split('.').pop() ? "" : log.pos.fileName + ": ")@(log.pos.className).@(log.pos.methodName)(@log.pos.lineNumber)</div>
+	    <div class="msg">@StringTools.htmlEscape(log.msg)</div>
+	  </li>
+	}
+}
+</ol>
+</body>
+</html>

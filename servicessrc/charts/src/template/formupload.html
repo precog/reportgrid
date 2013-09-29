@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Upload Rendering Template</title>
+  <link rel="stylesheet" type="text/css" href="@baseurl@url.base('css/style.css')">
+</head>
+<body>
+<h1>Upload Form</h1>
+@{
+  var action = null != displayFormat
+    ? url.route({ controller : 'uploadForm', action : 'display', displayFormat : displayFormat })
+    : url.route({ controller : 'uploadForm', action : 'display' });
+}
+<form method="post" action="@baseurl@action" class="formupload">
+  <ul>
+    <li>
+      <label for="html">HTML</label>
+      <br>
+      <textarea name="html">@(null == html ? '' : html)</textarea>
+      @if(errors.exists('html')) {
+	    <div class="error">@errors.get('html')</div>
+      }
+    </li>
+    <li>
+      <label for="config">CONFIG (INI format)</label>
+      <br>
+      <textarea name="config">@(null == config ? '' : config)</textarea>
+      @if(errors.exists('config')) {
+	    <div class="error">@errors.get('config')</div>
+      }
+    </li>
+  </ul>
+  <input type="submit" value="submit">
+<form>
+</body>
+</html>

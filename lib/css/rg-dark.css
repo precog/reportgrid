@@ -1,0 +1,537 @@
+@import url('colors/rg-colors-default.css');
+
+/* _____________________  SVG  _____________________ */
+.rg 
+{
+	fill: none;
+	stroke: none;
+}
+
+.rg line, .rg path
+{
+	stroke-width: 1;
+	stroke: #999;
+}
+
+/* _____________________  Text  _______________________ */
+.rg text, .rg tspan
+{
+	font-family:Arial, Helvetica, sans-serif;
+	color:#666;
+	font-size:11px;
+	line-height:14px;
+	fill:#666;
+	stroke-width: 0;
+	text-rendering: optimizelegibility;
+}
+
+.rg .title .label text
+{
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.rg .stream-chart path
+{
+	
+}
+
+.rg .group, .rg .group path:hover
+{
+	-webkit-transition: all 0.25s ease-in-out;
+	-moz-transition: all 0.25s ease-in-out;
+	-o-transition: all 0.25s ease-in-out;
+	-ms-transition: all 0.25s ease-in-out;
+	transition: all 0.25s ease-in-out;
+}
+
+.rg .group path
+{
+
+}
+
+.rg .group:hover path
+{
+	opacity: 1.0;
+    stroke-width:2;
+
+}
+
+/* _____________________  CHART DESIGN  _____________________ */
+.rg
+{
+	fill: none;
+	stroke: none;
+	
+	
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+.rg g.group
+{
+	stroke-width: 5;
+}
+
+.rg .pie-chart g.group, .rg .stream-chart g.group
+{
+	stroke-width: 3;
+	stroke-miterjoin:miter;
+	stroke-miterlimit:1;
+}
+
+.rg .pie-chart g.group path
+{
+	stroke: #333;
+	stroke-opacity: 0.4;
+}
+
+
+/* _____________________  LINE CHART DESIGN  _____________________ */
+
+.rg .line-chart g.group path.gradient
+{
+	fill:none;
+	stroke-width: 1;
+}
+
+.rg .line-chart g.group path.area
+{
+	stroke: none;
+	fill-opacity: 0.2;
+}
+
+.rg .line-chart g.group path.noeffect
+{
+	fill:none;
+	stroke-width: 2;
+}
+
+.rg .line-chart g.group path.dropshadow
+{
+	fill:none;
+	stroke-width: 1.5;
+}
+
+.rg .line-chart g.group path.shadow
+{
+	fill:none;
+	stroke-width: 1.5;
+	stroke-opacity: 0.2;
+	stroke: #666666;
+}
+
+.rg .line-chart g.group path.grad-0
+{
+	fill:none;
+	stroke-width: 1.5;
+	stroke-opacity: .5;
+}
+
+.rg .line-chart g.group path.grad-1
+{
+	fill:none;
+	stroke-width: 2;
+	stroke-opacity: 1.0;
+}
+
+.rg .line-chart g.group .symbols path
+{
+	fill: #FFF;
+	stroke: inherit;
+}
+
+.rg .line-chart path.line:hover
+{
+    stroke-color:#FFF;
+	stroke-width:12;
+}
+
+/* _____________________  Tool Tip  _____________________ */
+
+#tooltip
+{
+	text-align: center;
+	font-weight: bold;
+	background-color: #fff;
+	border: 1px solid #fff;
+	font-family: Arial, Helvetica, sans-serif;
+	color:#4D4D4D;
+	font-size:10px;
+	line-height:14px;
+	fill:#4D4D4D;
+	padding: 4px 8px;
+	
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	
+	-moz-box-shadow: 2px 2px 3px #666;
+	-webkit-box-shadow: 2px 2px 3px #666;
+	box-shadow: 2px 2px 3px #666;
+}
+
+/* _____________________  TICK MARKS  _____________________ */
+
+.rg g.linechart-highlighter line, line.rule
+{
+	stroke-width: 2;
+	shape-rendering: crispEdges;
+	stroke-dasharray: 1, 1; 
+	stroke: #666;
+}
+
+.rg g.linechart-highlighter rect
+{
+	fill: #fff;
+	stroke: #666;
+	stroke-width: 1px;
+}
+
+.rg line.rule
+{
+	stroke: #666;
+}
+
+.rg g.tick line
+{
+	stroke-width: 1;
+	stroke: #666;
+}
+
+.rg g.tick line.major
+{
+	stroke-width: 2;
+	stroke: #666;
+}
+
+.rg rect.panel-frame
+{
+	fill: #fff;
+	fill-opacity: 0;
+}
+
+/* _____________________  DIMENTIONS  _____________________ */
+
+.rg .dimension-0 text
+{
+	font-weight: bold;
+}
+
+.rg .line-chart.dimension-1 path.line
+{
+	stroke: #666 !important;
+}
+
+.rg .dimension-1 text
+{
+	fill: #666;
+	stroke-width: 0 !important;
+	font-weight: bold;
+}
+
+/* _____________________  LEADERBOARD  _____________________ */
+
+ul.leaderboard
+{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.rg ul.leaderboard li
+{
+	color:#ccc;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size: 8pt;
+}
+
+.rg .leaderboard li.nogradient
+{
+	background-image: none;
+}
+
+.rg li
+{
+	padding: 0;
+	margin: 0;
+
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		right top,
+		color-stop(0.0, rgb(40,40,40)),
+		color-stop(.5, rgb(60,60,60))
+	);
+	background-image: -moz-linear-gradient(
+		left center,
+		rgb(252,252,252) 0%,
+		rgb(225,225,225) 100%
+	);
+    
+	background-repeat: repeat-y;
+	
+	border: 1px solid #ccc;
+	margin: 0 0 2px 0;
+	max-width: 200px;
+	padding: 4px 4px;
+	
+	font-weight: bold;
+	font-size: 85%;
+	
+	/*-webkit-text-shadow: 0 0px 0 white;
+	-moz-text-shadow: 0 0px 0 white;
+	text-shadow: 0 0px 0 white;
+    */
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	
+}
+
+/* _____________________  PIVOT TABLE  _____________________ */
+/* PIVOT TABLE */
+.rg table.pivot-table
+{
+	clear:left;
+	border-spacing:0;
+	font-family:Tahoma,Arial,Helvetica,sans-serif;
+	font-size: 10pt;
+}
+
+.rg .pivot-table td
+{
+	border-left: 1px solid #f0f0f0;
+	border-right: 1px solid #CECECE;
+	border-top: 1px solid #f0f0f0;
+	border-bottom: 1px solid #CECECE;
+	padding: 1px 6px 1px 3px;
+	text-align: right;
+
+	font-size: 11px;
+	text-shadow: 1px 1px 1px #FFF;
+	-moz-text-shadow: 0.5px 0.25px 1px #aaa;
+	min-width: 40px;
+	background-color: #fff;
+}
+
+.rg .pivot-table th
+{
+	border-left: 1px solid #f0f0f0;
+	border-top: 1px solid #f0f0f0;
+	border-right: 1px solid #969696;
+	border-bottom: 1px solid #969696;
+	background-color: #e4e4e4;
+	padding: 0 2px 0 3px;
+	text-shadow: 1px 1px 0 #FFFFFF;
+	-moz-text-shadow: 1px 1px 0 #FFFFFF;
+	-webkit-text-shadow: 1px 1px 0 #FFFFFF;
+	font-weight: normal;
+	color: #000000;
+}
+
+.rg .pivot-table tfoot th.column.total, .rg .pivot-table tbody th.row.total, .rg .pivot-table tfoot th.table.total
+{
+	font-weight: bold;
+	font-size: 10px;
+	text-align: right;
+	padding-right: 4px;
+}
+
+.rg .pivot-table thead th.col-header, .rg .pivot-table thead th.row-header
+{
+	font-weight: bold;
+	padding: 0px 6px;
+	font-size: 10px;
+	background-color: #eee;
+	color: #444;
+}
+
+.rg .pivot-table th.column.value, .rg .pivot-table th.row.value
+{
+	font-weight: bold;
+	padding: 2px 6px;
+	font-size: 11px;
+}
+
+.rg .pivot-table thead th
+{
+	text-align: center;
+}
+
+.rg .pivot-table tbody th
+{
+	white-space: nowrap;
+	text-align: left;
+}
+
+.rg .pivot-table td:hover
+{
+	border: 1px solid #0026FF !important;
+}
+
+.rg.pivot-table .spacer
+{
+	background: none;
+	border: 0;
+}
+
+.rg .anchor-line
+{
+	shape-rendering: crispEdges;
+	stroke: #666;
+	stroke-width: 1;
+}
+
+/* _____________________  BAR CHART  _____________________ */
+
+.rg .bar-chart rect.bar
+{
+	shape-rendering: crispEdges;
+	stroke-width: 0;
+}
+
+.rg .border
+{
+	stroke: #000;
+	shape-rendering: crispEdges;
+}
+
+/* _____________________  FONTS / TEXT  _____________________ */
+
+.rg .label text
+{
+	font-family: Arial, Helvatica, sans-serif;
+	font-weight: bold;
+	font-size: 11px;
+	fill: #fff;
+	stroke: none;
+}
+
+/*
+.rg .label text.outline
+{
+	fill: none;
+	stroke: #FFF;
+	stroke-width: 5px;
+	stroke-opacity: 1;
+}
+*/
+.rg .label text.shadow
+{
+	fill: #666;
+	stroke-width: 1px;
+	stroke: #000;
+	opacity: 0.00;
+}
+
+.rg .label text.nooutline
+{
+	fill: #666;
+	font-weight: normal
+}
+
+.rg text.shadow.nooutline
+{
+	stroke-width: 1px;
+}
+
+.rg text.outline.noshadow
+{
+	stroke-width: 2px;
+	stroke: #555;
+}
+
+.rg .tick .label text
+{
+	font-size: 9px;
+}
+
+.rg .label text.outline
+{
+	stroke-width: 2px;
+	stroke-opacity: 1;
+}
+
+/* _____________________  SCATTER GRAPH  _____________________ */
+
+.rg .scatter-graph text
+{
+	font-size: 8pt;
+}
+
+.rg .scatter-graph g.symbol path
+{
+	stroke: none;
+}
+
+
+/* _____________________  PIE CHART  _____________________ */
+
+.rg .pie-chart path
+{
+	stroke-width:0;
+}
+
+/* _____________________  FUNNEL CHART  _____________________ */
+
+.rg .funnel-chart .funnel-outside
+{
+	stroke: none;
+}
+
+.rg .funnel-chart .arrow path
+{
+	stroke-width: 0px;
+	stroke: none;
+	fill: #000;
+}
+
+.rg .funnel-chart .arrow text
+{
+    color:#666;
+	font-size:10px;
+	font-weight: normal;
+}
+
+/* _____________________  BALOON  _____________________ */
+
+.rg path.balloon-connector
+{
+	stroke: #FFF;
+	stroke-width: 1;
+	stroke-dasharray: 2, 1;
+}
+
+.rg .balloon .label text.nooutline, .rg .balloon .label text.shadow.nooutline
+{
+	font-size: 9px;
+	font-weight: normal;
+}
+
+.rg .balloon path.bg
+{
+	fill : #FFF;
+	stroke : #FFF;
+	fill-opacity : 1;
+	stroke-width : 0;
+}
+
+.rg .balloon path.shadow
+{
+	opacity : 0.4;
+	fill : #000;
+	stroke : #000;
+	stroke-width : 1.5;
+}
+
+/* _____________________  HEAT GRID  _____________________ */
+
+.rg .heat-grid rect
+{
+	shape-rendering: crispEdges;
+	stroke-width: 1;
+}

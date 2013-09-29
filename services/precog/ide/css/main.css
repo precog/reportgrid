@@ -1,0 +1,393 @@
+.pg-ide, .pg-el, .pg-el.ui-widget, .ui-pnotify, .ui-pnotify-history-container {
+    font-size: 73%;
+    font-family: "Trebuchet MS", "Helvetica", "Arial",  "Verdana", "sans-serif";
+}
+
+.ui-pnotify-history-container {
+    right: 50% !important;
+}
+
+.ui-pnotify .ui-state-error {
+    padding: 8px;
+}
+
+.pg-pane {
+/*    border: 3px !important; */
+}
+
+.ui-layout-resizer-east, .ui-layout-resizer-west {
+    border:0 !important;
+}
+
+.ui-layout-resizer-north, .ui-layout-resizer-south {
+    border:0 !important;
+}
+
+.pg-system, .pg-main, .pg-editor-support, .pg-editor,
+.pg-io, .pg-input, .pg-output, .pg-folders, .pg-queries,
+.slick-header
+{
+    border:0 !important;
+}
+
+.pg-statusbar {
+/*    border:0 !important; */
+}
+
+.pg-toolbar {
+    border-top: 0 !important;
+    border-bottom: 0 !important;
+    vertical-align: baseline !important;
+}
+
+.pg-toolbar-actions, .pg-toolbar-context {
+    margin: 5px;
+    line-height: 24px;
+}
+
+.pg-toolbar-context .pg-toolbar-result-type {
+    line-height: 16px;
+}
+
+.pg-statusbar .pg-toolbar-context {
+    margin: 0 5px 0 0;
+}
+
+.ui-layout-resizer-dragging {
+/*    background-color: #000 !important; */
+}
+
+
+.pg-mainbar .pg-toolbar-actions, .pg-mainbar .pg-toolbar-context {
+    position: absolute;
+    line-height: 36px;
+}
+
+.pg-mainbar {
+    height: 38px;
+}
+
+.pg-mainbar .pg-toolbar-actions {
+}
+
+
+.pg-statusbar .pg-toolbar-actions {
+    font-weight: normal;
+    font-size: 93%;
+}
+
+.pg-statusbar .ui-button.ui-widget.pg-editor-settings-trigger {
+    background: transparent;
+    font-size: 100%;
+    border: none;
+}
+
+.pg-statusbar .pg-toolbar-context .pg-container {
+    display: inline-block;
+}
+
+.pg-statusbar .pg-toolbar-context .pg-container.pg-progressbar {
+    margin: 2px 0 0 0;
+    width: 200px;
+    height: 18px;
+}
+
+@keyframes progressbg
+{
+    0%   {background-position: 0 0;}
+    100% {background-position: 20px 0;}
+}
+
+@-moz-keyframes progressbg /* Firefox */
+{
+    0%   {background-position: 0 0;}
+    100% {background-position: 20px 0;}
+}
+
+@-webkit-keyframes progressbg /* Safari and Chrome */
+{
+    0%   {background-position: 0 0;}
+    100% {background-position: 20px 0;}
+}
+
+.pg-statusbar .ui-progressbar-value {
+    background-image: url(images/progress-background.png);
+    animation: progressbg 1s linear infinite;
+    /* Firefox: */
+    -moz-animation: progressbg 1s linear infinite;
+    /* Safari and Chrome: */
+    -webkit-animation: progressbg 1s linear infinite;
+}
+
+.pg-editor-tabs.ui-tabs .ui-tabs-nav {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    background-image: none;
+}
+
+.pg-execution-time, .slick-pager {
+    font-weight: normal;
+}
+
+.pg-editor-tabs.ui-tabs {
+/*     margin: 0;
+     padding: 0; */
+    border: 0;
+    margin-top: 2px;
+    margin-left: 3px;
+    background-color: transparent;
+    background-image: none;
+ }
+
+.pg-output-formats .ui-buttonset .ui-button {
+    font-size: 95%;
+    margin-right: -.35em;
+}
+
+.pg-editor-tabs .ui-icon.ui-icon-close {
+    display: inline-block;
+}
+
+.pg-toolbar-actions button, .pg-toolbar-context button {
+    height: 24px;
+}
+
+.pg-toolbar-context {
+    position: absolute;
+/*    margin: 0 5px; */
+/*    line-height: 24px; */
+    right: 0;
+    top: 0;
+}
+
+.pg-toolbar-context.pg-stacked-context > div {
+    float:left;
+}
+
+.pg-statusbar .pg-toolbar-actions {
+    margin: 0;
+}
+
+.pg-output .pg-toolbar-context .slick-pager {
+    border: 0;
+    background: transparent;
+}
+
+.pg-output-formats /*, .pg-editor-tabs.ui-tabs*/ {
+/*    padding: 2px; */
+}
+
+.pg-result .ui-state-error, .pg-result .ui-state-highlight {
+    padding: 0.7em;
+}
+
+.pg-result .ui-state-error p, .pg-result .ui-state-highlight p {
+    padding: 0;
+    margin: 0;
+}
+
+.pg-result .ui-widget pre {
+    font-family: monospace;
+    white-space: pre;
+    margin: 0;
+    padding: 0;
+}
+
+.pg-result .ui-widget pre.json {
+    font-size: 115%;
+}
+
+.pg-result .ui-widget {
+    overflow: auto;
+}
+
+.pg-result .ui-widget .ui-content {
+    margin: 0.5em;
+}
+
+.pg-logo {
+    background-repeat: no-repeat;
+    width: 110px;
+    height: 28px;
+    float: left;
+}
+
+.pg-quirrel {
+    background-image: url(images/logo-quirrel.svg);
+}
+
+.pg-precog {
+    background-image: url(images/logo-precog.svg);
+}
+
+.pg-ide .ui-layout-toggler {
+    border: 0;
+}
+
+.pg-ide .ui-layout-resizer {
+    border-radius: 0;
+}
+
+.pg-el.ui-widget .pg-export textarea {
+    resize: none;
+    font-family: monospace;
+    font-size: 13px;
+    line-height: 16px;
+    width: 799px;
+    height: 350px;
+    margin-top: 4px;
+    padding: 0;
+    border: 0;
+}
+
+.pg-el.ui-widget .pg-export textarea:focus {
+    outline: 0;
+}
+
+.pg-el.ui-widget .pg-dialog-export .pg-toolbar.pg-actions {
+    text-align: center;
+}
+
+.pg-tree {
+    overflow : auto;
+}
+
+.pg-structure.jstree.jstree-default {
+    background-color: transparent;
+}
+
+.pg-structure ins.jstree-themeicon {
+/*    display: none; */
+}
+
+.pg-dialog-lineinput .pg-error,
+.pg-dialog-lineinput .pg-message {
+    margin: 10px 0;
+    padding: 8px;
+    overflow: auto;
+}
+
+.pg-dialog-lineinput input[type="text"] {
+    width: 295px;
+}
+
+.pg-ingest-phase, .pg-ingest-message {
+    text-align: center;
+}
+
+.pg-ingest-phase {
+    font-weight: bold;
+}
+/*
+.pg-ide .ui-dialog {
+    font-size: 25%;
+}
+*/
+/*
+.pg-ide .slick-header.ui-state-default {
+    border: 0;
+}
+Query
+.pg-ide .slick-header-columns {
+    background: url('jquery/images/header-columns-bg.gif') repeat-x center bottom;
+    border-bottom: 1px solid silver;
+    text-align: center;
+}
+
+.pg-ide .slick-header-column {
+    background: url('jquery/images/header-columns-bg.gif') repeat-x center bottom;
+    border-right: 1px solid silver;
+}
+
+.pg-ide .slick-header-column:hover, .pg-ide .slick-header-column-active {
+    background: white url('../images/header-columns-over-bg.gif') repeat-x center bottom;
+}
+
+.pg-ide .slick-headerrow {
+    background: #fafafa;
+}
+
+.pg-ide .slick-headerrow-column {
+    background: #fafafa;
+    border-bottom: 0;
+    height: 100%;
+}
+
+.pg-ide .slick-row.ui-state-active {
+    background: #F5F7D7;
+}
+
+.pg-ide .slick-row {
+    position: absolute;
+    background: white;
+    border: 0px;
+    line-height: 20px;
+}
+
+.pg-ide .slick-row.selected {
+    z-index: 10;
+    background: #DFE8F6;
+}
+
+.pg-ide .slick-cell {
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.pg-ide .slick-group {
+    border-bottom: 2px solid silver;
+}
+
+.pg-ide .slick-group-toggle {
+    width: 9px;
+    height: 9px;
+    margin-right: 5px;
+}
+
+.pg-ide .slick-group-toggle.expanded {
+    background: url(../images/collapse.gif) no-repeat center center;
+}
+
+.pg-ide .slick-group-toggle.collapsed {
+    background: url(../images/expand.gif) no-repeat center center;
+}
+
+.pg-ide .slick-group-totals {
+    color: gray;
+    background: white;
+}
+
+.pg-ide .slick-cell.selected {
+    background-color: beige;
+}
+
+.pg-ide .slick-cell.active {
+    border-color: gray;
+    border-style: solid;
+}
+
+.pg-ide .slick-sortable-placeholder {
+    background: silver !important;
+}
+*/
+/*
+.pg-ide .slick-row.odd {
+    background: #fafafa;
+}
+*/
+/*
+.pg-ide .slick-row.ui-state-active {
+    background: #F5F7D7;
+}
+
+.pg-ide .slick-row.loading {
+    opacity: 0.5;
+    filter: alpha(opacity = 50);
+}
+
+.pg-ide .slick-cell.invalid {
+    border-color: red;
+}
+*/

@@ -1,0 +1,7 @@
+[
+	{ "age" : "0-14",    "gender" : "male",   "count" :  32107900 },
+	{ "age" : "0-14",    "gender" : "female", "count" :  30781823 },
+	{ "age" : "15-64",   "gender" : "male",   "count" : 104411352 },
+	{ "age" : "15-64",   "gender" : "female", "count" : 104808064 },
+	{ "age" : "65-over", "gender" : "male",   "count" :  17745363 },
+	{ "age" : "65-over", "gender" : "female", "count" :  23377542 }]
